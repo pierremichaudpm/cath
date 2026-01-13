@@ -1,0 +1,23 @@
+{
+  "name": "cath-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Catherine François - painter",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "build": "echo 'No build required for static site'"
+  },
+  "keywords": [
+    "portfolio",
+    "art",
+    "painting",
+    "responsive",
+    "website"
+  ],
+  "author": "Catherine François",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
