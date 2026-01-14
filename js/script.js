@@ -19,10 +19,7 @@ function isDesktop() {
 function openModal(imageSrc, title, year, medium) {
   if (!isDesktop()) return; // Only work on desktop
 
-  // Replace thumbnail path with large image path for modal
-  const largeImageSrc = imageSrc.replace("_thumb.jpg", "_large.jpg");
-
-  modalImage.src = largeImageSrc;
+  modalImage.src = imageSrc;
   modalImage.alt = title;
   modalTitle.textContent = title;
   modalYear.textContent = year;
