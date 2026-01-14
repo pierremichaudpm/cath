@@ -7,6 +7,7 @@ const modalImage = modal.querySelector(".modal-image");
 const modalTitle = modal.querySelector(".modal-title");
 const modalYear = modal.querySelector(".modal-year");
 const modalMedium = modal.querySelector(".modal-medium");
+const modalDimension = modal.querySelector(".modal-dimension");
 const modalClose = modal.querySelector(".modal-close");
 const modalOverlay = modal.querySelector(".modal-overlay");
 
@@ -16,7 +17,7 @@ function isDesktop() {
 }
 
 // Open modal
-function openModal(imageSrc, title, year, medium) {
+function openModal(imageSrc, title, year, medium, dimension) {
   if (!isDesktop()) return; // Only work on desktop
 
   modalImage.src = imageSrc;
@@ -24,6 +25,7 @@ function openModal(imageSrc, title, year, medium) {
   modalTitle.textContent = title;
   modalYear.textContent = year;
   modalMedium.textContent = medium;
+  modalDimension.textContent = dimension;
 
   modal.classList.add("active");
   document.body.style.overflow = "hidden"; // Prevent scrolling
@@ -45,10 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const title = item.querySelector(".painting-title").textContent;
     const year = item.querySelector(".painting-year").textContent;
     const medium = item.querySelector(".painting-medium").textContent;
+    const dimension = item.querySelector(".painting-dimension").textContent;
 
     frame.addEventListener("click", () => {
       if (isDesktop()) {
-        openModal(img.src, title, year, medium);
+        openModal(img.src, title, year, medium, dimension);
       }
     });
   });
