@@ -157,60 +157,60 @@ body {
     transition: transform 0.4s ease;
 }
 
-/* Staggered wall arrangement */
+/* Natural wall arrangement - balanced and harmonious */
 .painting-item:nth-child(1) {
     margin-top: 0;
 }
 .painting-item:nth-child(2) {
-    margin-top: 60px;
-}
-.painting-item:nth-child(3) {
-    margin-top: -30px;
-}
-.painting-item:nth-child(4) {
-    margin-top: 90px;
-}
-.painting-item:nth-child(5) {
     margin-top: 20px;
 }
-.painting-item:nth-child(6) {
-    margin-top: -50px;
-}
-.painting-item:nth-child(7) {
-    margin-top: 70px;
-}
-.painting-item:nth-child(8) {
+.painting-item:nth-child(3) {
     margin-top: 0;
 }
-.painting-item:nth-child(9) {
-    margin-top: -40px;
-}
-.painting-item:nth-child(10) {
-    margin-top: 80px;
-}
-.painting-item:nth-child(11) {
+.painting-item:nth-child(4) {
     margin-top: 30px;
 }
-.painting-item:nth-child(12) {
-    margin-top: -20px;
-}
-.painting-item:nth-child(13) {
-    margin-top: 60px;
-}
-.painting-item:nth-child(14) {
+.painting-item:nth-child(5) {
     margin-top: 10px;
 }
+.painting-item:nth-child(6) {
+    margin-top: -10px;
+}
+.painting-item:nth-child(7) {
+    margin-top: 25px;
+}
+.painting-item:nth-child(8) {
+    margin-top: 5px;
+}
+.painting-item:nth-child(9) {
+    margin-top: 15px;
+}
+.painting-item:nth-child(10) {
+    margin-top: 40px;
+}
+.painting-item:nth-child(11) {
+    margin-top: 10px;
+}
+.painting-item:nth-child(12) {
+    margin-top: 0;
+}
+.painting-item:nth-child(13) {
+    margin-top: 20px;
+}
+.painting-item:nth-child(14) {
+    margin-top: 5px;
+}
 .painting-item:nth-child(15) {
-    margin-top: -30px;
+    margin-top: -5px;
 }
 .painting-item:nth-child(16) {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .painting-item:nth-child(17) {
     margin-top: 0;
 }
 .painting-item:nth-child(18) {
-    margin-top: 70px;
+    margin-top: 15px;
 }
 
 @keyframes fadeInScale {
