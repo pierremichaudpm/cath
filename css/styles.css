@@ -157,60 +157,60 @@ body {
     transition: transform 0.4s ease;
 }
 
-/* Beautiful gallery wall - adjusted for info space */
+/* Beautiful gallery wall - smart offsets respecting natural flow */
 .painting-item:nth-child(1) {
     margin-top: 0;
 }
 .painting-item:nth-child(2) {
-    margin-top: 60px;
+    margin-top: -80px;
 }
 .painting-item:nth-child(3) {
-    margin-top: -140px;
-}
-.painting-item:nth-child(4) {
     margin-top: 40px;
 }
-.painting-item:nth-child(5) {
-    margin-top: -160px;
-}
-.painting-item:nth-child(6) {
-    margin-top: 80px;
-}
-.painting-item:nth-child(7) {
+.painting-item:nth-child(4) {
     margin-top: -120px;
 }
-.painting-item:nth-child(8) {
-    margin-top: 100px;
-}
-.painting-item:nth-child(9) {
-    margin-top: -150px;
-}
-.painting-item:nth-child(10) {
-    margin-top: 50px;
-}
-.painting-item:nth-child(11) {
-    margin-top: -170px;
-}
-.painting-item:nth-child(12) {
-    margin-top: 70px;
-}
-.painting-item:nth-child(13) {
-    margin-top: -130px;
-}
-.painting-item:nth-child(14) {
-    margin-top: 90px;
-}
-.painting-item:nth-child(15) {
-    margin-top: -140px;
-}
-.painting-item:nth-child(16) {
+.painting-item:nth-child(5) {
     margin-top: 60px;
 }
-.painting-item:nth-child(17) {
+.painting-item:nth-child(6) {
+    margin-top: -90px;
+}
+.painting-item:nth-child(7) {
+    margin-top: 50px;
+}
+.painting-item:nth-child(8) {
     margin-top: -110px;
 }
+.painting-item:nth-child(9) {
+    margin-top: 70px;
+}
+.painting-item:nth-child(10) {
+    margin-top: -100px;
+}
+.painting-item:nth-child(11) {
+    margin-top: 30px;
+}
+.painting-item:nth-child(12) {
+    margin-top: -85px;
+}
+.painting-item:nth-child(13) {
+    margin-top: 55px;
+}
+.painting-item:nth-child(14) {
+    margin-top: -95px;
+}
+.painting-item:nth-child(15) {
+    margin-top: 45px;
+}
+.painting-item:nth-child(16) {
+    margin-top: -105px;
+}
+.painting-item:nth-child(17) {
+    margin-top: 65px;
+}
 .painting-item:nth-child(18) {
-    margin-top: 80px;
+    margin-top: -75px;
 }
 
 @keyframes fadeInScale {
