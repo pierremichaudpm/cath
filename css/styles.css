@@ -514,10 +514,11 @@ body {
 
 .modal-medium {
     font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    color: var(--charcoal);
-    opacity: 0.8;
+    font-size: 1.2rem;
+    color: white;
+    opacity: 0.95;
     line-height: 1.6;
+    font-weight: 300;
 }
 
 /* Only enable modal on desktop */
