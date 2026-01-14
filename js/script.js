@@ -3,7 +3,6 @@ document.documentElement.style.scrollBehavior = "smooth";
 
 // Modal functionality (desktop only)
 const modal = document.getElementById("paintingModal");
-const modalImageContainer = modal.querySelector(".modal-image-container");
 const modalImage = modal.querySelector(".modal-image");
 const modalTitle = modal.querySelector(".modal-title");
 const modalYear = modal.querySelector(".modal-year");
@@ -18,7 +17,7 @@ function isDesktop() {
 }
 
 // Open modal
-function openModal(imageSrc, title, year, medium, dimension, frameColor) {
+function openModal(imageSrc, title, year, medium, dimension) {
   if (!isDesktop()) return; // Only work on desktop
 
   modalImage.src = imageSrc;
@@ -27,7 +26,6 @@ function openModal(imageSrc, title, year, medium, dimension, frameColor) {
   modalYear.textContent = year;
   modalMedium.textContent = medium;
   modalDimension.textContent = dimension;
-  modalImageContainer.setAttribute("data-frame", frameColor);
 
   modal.classList.add("active");
   document.body.style.overflow = "hidden"; // Prevent scrolling
@@ -50,11 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const year = item.querySelector(".painting-year").textContent;
     const medium = item.querySelector(".painting-medium").textContent;
     const dimension = item.querySelector(".painting-dimension").textContent;
-    const frameColor = item.getAttribute("data-frame");
 
     frame.addEventListener("click", () => {
       if (isDesktop()) {
-        openModal(img.src, title, year, medium, dimension, frameColor);
+        openModal(img.src, title, year, medium, dimension);
       }
     });
   });

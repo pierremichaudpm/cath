@@ -478,86 +478,12 @@ body {
     transform: rotate(90deg);
 }
 
-.modal-image-container {
-    max-width: 70%;
-    max-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    background: white;
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.1),
-        0 1px 8px rgba(0, 0, 0, 0.06);
-    position: relative;
-}
-
-.modal-image-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image:
-        repeating-linear-gradient(
-            0deg,
-            transparent,
-            transparent 2px,
-            rgba(0, 0, 0, 0.02) 2px,
-            rgba(0, 0, 0, 0.02) 4px
-        ),
-        repeating-linear-gradient(
-            90deg,
-            transparent,
-            transparent 2px,
-            rgba(0, 0, 0, 0.02) 2px,
-            rgba(0, 0, 0, 0.02) 4px
-        );
-    background-size: 100% 100%;
-    pointer-events: none;
-    opacity: 0.6;
-}
-
-.modal-image-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
-    pointer-events: none;
-    opacity: 0.4;
-}
-
 .modal-image {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 70vh;
     object-fit: contain;
-    position: relative;
-    z-index: 2;
-}
-
-/* Frame colors for modal - matching gallery frames */
-.modal-image-container[data-frame="coral"] {
-    border: 8px solid var(--frame-coral);
-}
-
-.modal-image-container[data-frame="teal"] {
-    border: 8px solid var(--frame-teal);
-}
-
-.modal-image-container[data-frame="purple"] {
-    border: 8px solid var(--frame-purple);
-}
-
-.modal-image-container[data-frame="rose"] {
-    border: 8px solid var(--frame-rose);
-}
-
-.modal-image-container[data-frame="ocean"] {
-    border: 8px solid var(--frame-ocean);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    border: 8px solid white;
 }
 
 .modal-info {
