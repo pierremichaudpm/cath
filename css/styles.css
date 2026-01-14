@@ -157,60 +157,60 @@ body {
     transition: transform 0.4s ease;
 }
 
-/* Natural wall arrangement - balanced and harmonious */
+/* Beautiful gallery wall arrangement - natural and artistic */
 .painting-item:nth-child(1) {
     margin-top: 0;
 }
 .painting-item:nth-child(2) {
-    margin-top: 20px;
+    margin-top: 80px;
 }
 .painting-item:nth-child(3) {
-    margin-top: 0;
+    margin-top: -40px;
 }
 .painting-item:nth-child(4) {
-    margin-top: 30px;
+    margin-top: 120px;
 }
 .painting-item:nth-child(5) {
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .painting-item:nth-child(6) {
-    margin-top: -10px;
+    margin-top: -60px;
 }
 .painting-item:nth-child(7) {
-    margin-top: 25px;
+    margin-top: 90px;
 }
 .painting-item:nth-child(8) {
-    margin-top: 5px;
+    margin-top: -20px;
 }
 .painting-item:nth-child(9) {
-    margin-top: 15px;
+    margin-top: 60px;
 }
 .painting-item:nth-child(10) {
-    margin-top: 40px;
+    margin-top: 100px;
 }
 .painting-item:nth-child(11) {
     margin-top: 10px;
 }
 .painting-item:nth-child(12) {
-    margin-top: 0;
+    margin-top: -30px;
 }
 .painting-item:nth-child(13) {
-    margin-top: 20px;
+    margin-top: 70px;
 }
 .painting-item:nth-child(14) {
-    margin-top: 5px;
+    margin-top: 20px;
 }
 .painting-item:nth-child(15) {
-    margin-top: -5px;
+    margin-top: -50px;
 }
 .painting-item:nth-child(16) {
-    margin-top: 30px;
+    margin-top: 80px;
 }
 .painting-item:nth-child(17) {
     margin-top: 0;
 }
 .painting-item:nth-child(18) {
-    margin-top: 15px;
+    margin-top: 50px;
 }
 
 @keyframes fadeInScale {
