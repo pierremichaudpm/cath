@@ -591,91 +591,74 @@ body {
 /* Footer */
 footer {
     text-align: center;
-    padding: 60px 40px;
-    margin-top: 100px;
-    position: relative;
-    overflow: hidden;
+    padding: 80px 40px 60px;
+    margin-top: 120px;
+    background: linear-gradient(
+        135deg,
+        rgba(245, 243, 238, 0.3) 0%,
+        rgba(253, 251, 247, 0.5) 100%
+    );
 }
 
-footer::before,
-footer::after {
-    content: "•";
-    position: absolute;
+footer .container {
+    max-width: 900px;
+}
+
+.prix-demande {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.3rem;
     color: var(--teal);
-    font-size: 1.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.footer-divider {
+    width: 100px;
+    height: 1px;
+    background-color: var(--coral);
+    margin: 25px auto;
     opacity: 0.4;
 }
 
-footer::before {
-    top: 30px;
-    left: 50px;
-    transform: rotate(15deg);
-}
-
-footer::after {
-    bottom: 30px;
-    right: 50px;
-    transform: rotate(-15deg);
-}
-
-/* Footer specific styles */
-.prix-demande {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 1.4rem;
-    color: var(--teal);
-    position: relative;
-    display: inline-block;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-    font-style: italic;
-}
-
-.prix-demande::before,
-.prix-demande::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    height: 1px;
-    background-color: var(--teal);
-    opacity: 0.6;
-}
-
-.prix-demande::before {
-    left: -70px;
-}
-
-.prix-demande::after {
-    right: -70px;
-}
-
 .footer-title {
-    font-size: 4rem;
-    letter-spacing: 2px;
-    position: relative;
-    display: inline-block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 300;
+    color: var(--charcoal);
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+    line-height: 1.2;
 }
 
-.footer-title::after {
-    content: "";
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 2px;
-    background: linear-gradient(
-        to right,
-        transparent,
-        var(--teal),
-        transparent
-    );
-    opacity: 0.7;
+.footer-contact {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: var(--charcoal);
+    opacity: 0.75;
 }
 
 .footer-contact p {
+    margin: 0;
     letter-spacing: 0.5px;
     font-weight: 300;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 60px 20px 40px;
+        margin-top: 80px;
+    }
+
+    .footer-title {
+        letter-spacing: 1px;
+    }
+
+    .footer-contact {
+        font-size: 0.9rem;
+    }
 }
 
 /* Print styles */
